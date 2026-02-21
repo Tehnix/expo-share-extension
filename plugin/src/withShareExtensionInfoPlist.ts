@@ -56,6 +56,7 @@ export const withShareExtensionInfoPlist: ConfigPlugin<{
       CFBundleShortVersionString: "$(MARKETING_VERSION)",
       CFBundleVersion: "$(CURRENT_PROJECT_VERSION)",
       LSRequiresIPhoneOS: true,
+      UIDesignRequiresCompatibility: true,
       NSAppTransportSecurity: {
         NSExceptionDomains: {
           localhost: {
