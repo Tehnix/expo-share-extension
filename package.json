@@ -10,7 +10,7 @@
     "lint": "expo-module lint",
     "test": "expo-module test",
     "prepare": "expo-module prepare",
-   "postinstall": "bun run prepare",
+    "postinstall": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "open -a \"Xcode\" example/ios",
@@ -36,15 +36,15 @@
   "homepage": "https://github.com/MaxAst/expo-share-extension#readme",
   "dependencies": {
     "semver": "^7.7.2",
-    "valibot": "^1.1.0"
+    "valibot": "^1.1.0",
+    "expo-module-scripts": "^5.0.7",
+    "expo-modules-core": "^3.0.20"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/runtime": "^7.28.4",
     "@types/react": "19.1.4",
     "@types/semver": "^7.7.0",
-    "expo-module-scripts": "^5.0.7",
-    "expo-modules-core": "^3.0.20",
     "release-it": "^19.0.2"
   },
   "peerDependencies": {
